@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean class="com.prowings.core.Student" name="std1" >
+	<bean class="com.prowings.core.Student" name="std1" scope="singleton" >
 		<property name="rollNumber">
-		<value>20</value>
+		<value>10</value>
 		</property>
 		
 		<property name="name"> 
-		<value>Sham</value>
+		<value>Sejal</value>
 		</property>
 
 		<property name="address"> 
@@ -21,11 +21,11 @@
 	
 		<bean class="com.prowings.core.Employee" name="emp1">
 		<property name="id">
-		<value>10</value>
+		<value>20</value>
 		</property>
 		
 		<property name="name"> 
-		<value>Ram</value>
+		<value>Samruddhi</value>
 		</property>
 
 		<property name="address"> 
