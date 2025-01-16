@@ -4,51 +4,60 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean class="com.prowings.core.Student" name="std1" scope="singleton" >
+	<bean class="com.prowings.core.Student" name="std1"
+		scope="singleton">
 		<property name="rollNumber">
-		<value>10</value>
-		</property>
-		
-		<property name="name"> 
-		<value>Sejal</value>
+			<value>10</value>
 		</property>
 
-		<property name="address"> 
-		<value>Mumbai</value>
+		<property name="name">
+			<value>Sejal</value>
 		</property>
-		
+
+		<property name="address">
+			<value>Mumbai</value>
+		</property>
+
 	</bean>
-	
-		<bean class="com.prowings.core.Employee" name="emp1">
+
+	<bean class="com.prowings.core.Employee" name="emp1">
 		<property name="id">
-		<value>20</value>
-		</property>
-		
-		<property name="name"> 
-		<value>Samruddhi</value>
+			<value>20</value>
 		</property>
 
-		<property name="address"> 
-		<value>Pune</value>
+		<property name="name">
+			<value>Samruddhi</value>
 		</property>
-		
+
+		<property name="address">
+			<value>Pune</value>
+		</property>
+
 	</bean>
-	
-	<!-- <bean class="com.prowings.core.Person" name="p1" >
-		
-		<constructor-arg value="10" type= "int" index="0"/>
-	    <constructor-arg value="Varun" type="String" index="1"/>
-	    <constructor-arg value="Pune" type="String" index="2"/>
-		
-	</bean> -->
-	
-	
-	<bean id="order1" class="com.prowings.core.Order">
-    <constructor-arg type="java.lang.String" value="12345"/> <!-- String -->
-    <constructor-arg type="double" value="999.99"/> <!-- double -->
-</bean>
+
+	<!-- <bean class="com.prowings.core.Person" name="p1" > <constructor-arg 
+		value="10" type= "int" index="0"/> <constructor-arg value="Varun" type="String" 
+		index="1"/> <constructor-arg value="Pune" type="String" index="2"/> </bean> -->
 
 
+	<!-- <bean id="order1" class="com.prowings.core.Order"> <constructor-arg 
+		type="java.lang.String" value="12345"/> String <constructor-arg type="double" 
+		value="999.99"/> double </bean> -->
+
+	<!-- Address Bean -->
+	<bean class = "com.prowings.core.Address" name = "address" >
 	
+		<property name="street" value="MSEB Street" />
+		<property name="city" value="KOlhapur" />
+	</bean>
+
+	<!-- Person Bean -->
+	<bean class = "com.prowings.core.Person1" name = "person1" >
 	
+		<property name="name" value="Viraj Patil" />
+		<property name="address" ref="address" />
+	</bean>
+
+
+
 </beans>
