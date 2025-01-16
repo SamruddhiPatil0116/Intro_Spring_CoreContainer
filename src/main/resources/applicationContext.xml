@@ -34,12 +34,21 @@
 		
 	</bean>
 	
-	<bean class="com.prowings.core.Person" name="p1" >
+	<!-- <bean class="com.prowings.core.Person" name="p1" >
 		
 		<constructor-arg value="10" type= "int" index="0"/>
 	    <constructor-arg value="Varun" type="String" index="1"/>
 	    <constructor-arg value="Pune" type="String" index="2"/>
 		
-	</bean>
+	</bean> -->
+	
+	
+	<bean id="order1" class="com.prowings.core.Order">
+    <constructor-arg type="java.lang.String" value="12345"/> <!-- String -->
+    <constructor-arg type="double" value="999.99"/> <!-- double -->
+</bean>
+
+
+	
 	
 </beans>
