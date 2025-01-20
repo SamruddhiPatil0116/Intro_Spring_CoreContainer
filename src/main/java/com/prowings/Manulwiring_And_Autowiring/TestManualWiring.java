@@ -9,7 +9,7 @@ public class TestManualWiring {
 		
 		System.out.println("Main started!!!");
 
-		ApplicationContext context = new ClassPathXmlApplicationContext("ManualwiringContext.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("AutowiringContext.xml");
 
 		Employee e1 = context.getBean("emp", Employee.class);
 

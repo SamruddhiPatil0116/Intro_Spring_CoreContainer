@@ -8,7 +8,7 @@ public class Department {
 	
 	public int getId() {
 		return id;
-	}
+	 }
 	public void setId(int id) {
 		System.out.println("setter of Department -> id called!!");
 		this.id = id;
